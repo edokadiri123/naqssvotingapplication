@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    .pageHeading
+        h1  Number of the Candidates Per Position
+
+    .formDiv
+        form(id="setupForm", action="/setup", method="post")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="President") Number of Presidential Candidates
+                input(type="number", id="presi", name="president")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="Vice President") Number of Vice Presidential Candidates
+                input(type="number", id="vpresi", name="vicePresident")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="General Secretary") Number of General Secretary Candidates
+                input(type="number", id="genSec", name="generalSecretary")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="Financial Secretary") Number of Financial Secretary Candidates
+                input(type="number", id="finSec", name="financialSecretary")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="DOSO") Number of Director of Socials Candidates
+                input(type="number", id="doso", name="directorOfSocials")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="DOSP") Number of Director of Sports Candidates
+                input(type="number", id="dosp", name="directorOfSports")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="Assistant Gen Sec") Number of Assistant Gen Sec Candidates
+                input(type="number", id="ags", name="assGenSec")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="Treasurer") Number of Treasurer Candidates
+                input(type="number", id="trea", name="treasurer")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="PRO") Number of PRO Candidates
+                input(type="number", id="pro", name="profficer")
+            .errorInfo  Please fill this field
+            .eachPosition
+                label(for="Librarian") Number of Librarian Candidates
+                input(type="number", id="lib", name="librarian")
+            .eachPosition
+                input(type="submit", id="submitNumber", value="Submit")

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .container
+        h2  Upload All the Pictures of the Candidates
+        .inputDiv
+            #first
+            #second
+        form(action="/upload", method="post", enctype='multipart/form-data')
+            input(type="file", accept="image/*", name="candidatesImages", id="pickImgs" multiple)
+            .report No files selected
+            input(type="submit", id="uploadBtn" value="Upload")
+            .note save the images with the full names of the candidates e.g. Iwerinwa Daniel.jpg

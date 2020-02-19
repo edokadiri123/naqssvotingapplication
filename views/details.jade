@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .detailsContainer
+        .detailsDiv    
+            h2  Candidate Details
+
+            form(action="/details", id="detailsForm", method="post")
+                input(type="text", id="noc", name="nameOfCandidate", placeholder="Name of Candidate")
+                select(name="positionOfCandidate", title="Select the Position", id="poc")
+                    option(value="Default") -- Select the Position --
+                    option(value="President")   President
+                    option(value="Vice President")  Vice President
+                    option(value="General Secretary")   General Secretary
+                    option(value="Assistant General Secretary") Assistant General Secretary
+                    option(value="Financial Secretary") Financial Secretary
+                    option(value="Treasurer")   Treasurer
+                    option(value="PRO") PRO 
+                    option(value="Librarian")   Librarian
+                    option(value="Director of Socials") Director of Socials
+                    option(value="Director of Sports")  Director of Sports
+                
+                input(type="submit", id="detSubmitBtn", value="Submit and Add Next Candidate")
+            
+            a(href="/summary")
+                .endAddingCandidates All Candidates Added. Click To Proceed.
+
+        .detailsSummaryDiv

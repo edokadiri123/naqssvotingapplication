@@ -1,0 +1,271 @@
+body {
+  padding: 0px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.pageHeading {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.formDiv, .pageHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submitNumber {
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  border: solid 0.5px black;
+  border-radius: 9px;
+  background-color: transparent;
+}
+.formDiv form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eachPosition{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.eachPosition label{
+  width: 300px;
+}
+.errorInfo {
+  align-self: flex-end;
+  padding-right: 35px;
+  color: red;
+  visibility: hidden;
+  font-size: 0.8em;
+}
+.error{
+  visibility: visible;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.inputDiv {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: dashed 4px gray;
+  border-radius: 10px;
+  transition: all 300ms ease-in;
+}
+#first, #second {
+  width: 50px;
+  height: 3px;
+  background-color: orangered;
+  transition: all 300ms ease-in;
+}
+#second{
+  transform: rotate(90deg);
+}
+.container input {
+  width: 200px;
+}
+.container h2 {
+  margin-bottom: 40px;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px
+}
+#pickImgs {
+  display: none;
+}
+#uploadBtn {
+  height: 40px;
+  border: solid 1px gray ;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+#uploadBtn:hover, .inputDiv:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: orangered;
+}
+.inputDiv:hover{
+  background-color: pink;
+}
+.inputDiv:hover #first, .inputDiv:hover #second{
+  background-color: black;
+}
+.note {
+  font-weight: bolder;
+  margin-top: 30px;
+}
+.report {
+  margin: 10px;
+}
+
+
+/* S T Y L E   F O R   L O G I N   P A G E */
+.loginDiv, .loginFormDiv form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginDiv {
+  height: 100vh;
+  background-color: aquamarine;
+}
+.loginDiv h2 {
+  margin-bottom: 40px;
+}
+.loginFormDiv input {
+  margin-bottom: 25px;
+  width: 350px;
+  height: 35px;
+}
+#adminName, #pwd {
+  border-top: none;
+  border-bottom: solid 0.5px black;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  padding-left: 15px;
+}
+.loginFormDiv input[type=submit] {
+  width: 150px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* S T Y L E   F O R   D E T A I L S   P A G E */
+.detailsDiv , .detailsDiv form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.detailsDiv {
+  height: 100vh;
+  width: 60vw;
+}
+.detailsDiv h2 {
+  margin-bottom: 50px;
+}
+.detailsDiv a{
+  text-decoration: none;
+}
+#noc, #poc {
+  width: 400px;
+  height: 25px;
+  border-top: none;
+  border-bottom: solid 1px black;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+#detSubmitBtn {
+  width: auto;
+  height: 45px;
+  border-radius: 9px;
+  border: solid 0.5px black;
+  background-color: transparent;
+  cursor: pointer;
+}
+.detailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detailsSummaryDiv{
+  width: 40vw;
+  height: 100vh;
+  background-color: yellow;
+}
+.endAddingCandidates {
+  width: auto;
+  padding: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  margin-top: 50px;
+  border: solid 1px red;
+  border-radius: 20px;
+  display: none;
+}
+option {
+  height: 50px;
+}
+input, select, textarea {
+  outline: none;
+}
+.eachCandidate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.candidateName {
+  box-sizing: border-box;
+  width: 35%;
+  padding: 10px; 
+}
+.candidatePosition {
+  box-sizing: border-box;
+  width: 35%;
+  padding: 10px; 
+}
+.candidateVotes{
+  box-sizing: border-box;
+  width: 30%;
+  padding: 10px; 
+  text-align: center;
+}
+/* E N D  O F   S T Y L E   F O R   D E T A I L S   P A G E */
+/* S T Y L E   F O R   S U M M A R Y   P A G E */
+.summaryOfCandidates{
+  width: 100vw;
+  height: 70vh;
+}
+.changePage{
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: cadetblue;
+}
+#previous, #next {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: solid 1px white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  border-radius: 12px;
+  background-color: transparent;
+}
+#previous:hover, #next:hover {
+  cursor: pointer;
+}

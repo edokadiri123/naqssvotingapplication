@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .loginDiv
+        h2 LOGIN AS ADMINISTRATOR
+
+        .loginFormDiv
+            form(action="/login", method="post")
+                input(type="text", id="adminName", name="username", placeholder="Please Enter Your Full Name")
+                input(type="password", id="pwd", name="password", placeholder="Password")
+                input(type="submit", id="submitBtn", value="Submit")
